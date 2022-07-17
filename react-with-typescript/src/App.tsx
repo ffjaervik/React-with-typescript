@@ -15,7 +15,14 @@ interface IState{
 
 
 function App() {
-const [people, setPeople] = useState<IState["people"]>([]);
+const [people, setPeople] = useState<IState["people"]>([
+  {
+    name: 'Max',
+    age: 28,
+    url: '',
+    note: "Max is a bit of a jerk"
+  },
+]);
 
   return (
     <div className="App">
